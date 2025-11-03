@@ -113,7 +113,7 @@
             tapping-term-ms = <200>;
             flavor = "balanced";
             quick-tap-ms = <150>;
-            bindings = <&kp APOS>, <&uc 0x22>; // ' / "
+            bindings = <&kp APOS>, <&kp DQT>; // ' / "
        };
 
         td_slash_qmark: tap_dance_slash_qmark {
