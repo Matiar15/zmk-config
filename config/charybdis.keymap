@@ -162,7 +162,7 @@
 
         layer_2 {
             bindings = <
-                &kp EXCL       &kp AT        &kp HASH      &kp DLLR      &kp PERC      &kp CARET
+                &kp EXCL    &kp AT    &kp HASH    &kp DOLLAR    &kp PERCENT    &kp CARET
                 &kp AMPS       &kp ASTRK     &kp LPAR      &kp RPAR      &kp MINUS     &kp EQUAL
                 &kp TILDE      &kp GRAVE     &kp UNDER     &kp PLUS      &kp PIPE      &kp BKSLS
                 &kp LT         &kp GT        &td_comma_lt  &td_dot_gt    &kp SEMI      &kp COLON
