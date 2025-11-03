@@ -11,7 +11,6 @@
             label = "TD_A";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            flavor = "balanced";
             quick-tap-ms = <150>;
             bindings = <&kp A>, <&kp RA(A)>; // a / ą
         };
@@ -21,7 +20,6 @@
             label = "TD_C";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            flavor = "balanced";
             quick-tap-ms = <150>;
             bindings = <&kp C>, <&kp RA(C)>; // c / ć
         };
@@ -31,7 +29,6 @@
             label = "TD_E";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            flavor = "balanced";
             quick-tap-ms = <150>;
             bindings = <&kp E>, <&kp RA(E)>; // e / ę
         };
@@ -41,7 +38,6 @@
             label = "TD_L";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            flavor = "balanced";
             quick-tap-ms = <150>;
             bindings = <&kp L>, <&kp RA(L)>; // l / ł
         };
@@ -51,7 +47,6 @@
             label = "TD_N";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            flavor = "balanced";
             quick-tap-ms = <150>;
             bindings = <&kp N>, <&kp RA(N)>; // n / ń
         };
@@ -61,7 +56,6 @@
             label = "TD_O";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            flavor = "balanced";
             quick-tap-ms = <150>;
             bindings = <&kp O>, <&kp RA(O)>; // o / ó
         };
@@ -71,7 +65,6 @@
             label = "TD_S";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            flavor = "balanced";
             quick-tap-ms = <150>;
             bindings = <&kp S>, <&kp RA(S)>; // s / ś
         };
@@ -81,7 +74,6 @@
             label = "TD_Z";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            flavor = "balanced";
             quick-tap-ms = <150>;
             bindings = <&kp Z>, <&kp RA(Z)>; // z / ź
         };
@@ -91,7 +83,6 @@
             label = "TD_X";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            flavor = "balanced";
             quick-tap-ms = <150>;
             bindings = <&kp X>, <&kp RA(X)>; // x / ż
         };
@@ -101,7 +92,6 @@
             label = "TD_SEMI";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            flavor = "balanced";
             quick-tap-ms = <150>;
             bindings = <&kp SEMI>, <&kp COLON>;
         };
@@ -111,7 +101,6 @@
             label = "TD_APOS";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            flavor = "balanced";
             quick-tap-ms = <150>;
             bindings = <&kp APOS>, <&kp DQT>; // ' / "
        };
@@ -121,7 +110,6 @@
             label = "TD_SLASH_QMARK";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            flavor = "balanced";
             quick-tap-ms = <150>;
             bindings = <&kp FSLH>, <&kp QMARK>;
         };
@@ -131,7 +119,6 @@
             label = "TD_COMMA_LT";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            flavor = "balanced";
             quick-tap-ms = <150>;
             bindings = <&kp COMMA>, <&kp LT>;
         };
@@ -141,7 +128,6 @@
             label = "TD_DOT_GT";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            flavor = "balanced";
             quick-tap-ms = <150>;
             bindings = <&kp DOT>, <&kp GT>;
         };
