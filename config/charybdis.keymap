@@ -1,8 +1,8 @@
-#include <behaviors.dtsi>
-#include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/pointing.h>
 #include <dt-bindings/zmk/rgb.h>
+#include "keys_pl.h"
 
 / {
     behaviors {
@@ -13,7 +13,7 @@
             tapping-term-ms = <200>;
             flavor = "balanced";
             quick-tap-ms = <150>;
-            bindings = <&kp A>, <&kp U+0105>;
+            bindings = <&kp A>, <&kp PL_AOGON>; // a / ą
         };
 
         td_c: td_c {
@@ -23,7 +23,7 @@
             tapping-term-ms = <200>;
             flavor = "balanced";
             quick-tap-ms = <150>;
-            bindings = <&kp C>, <&kp U+0107>;
+            bindings = <&kp C>, <&kp PL_CACUTE>; // c / ć
         };
 
         td_e: td_e {
@@ -33,7 +33,7 @@
             tapping-term-ms = <200>;
             flavor = "balanced";
             quick-tap-ms = <150>;
-            bindings = <&kp E>, <&kp U+0119>;
+            bindings = <&kp E>, <&kp PL_EOGON>; // e / ę
         };
 
         td_l: td_l {
@@ -43,7 +43,7 @@
             tapping-term-ms = <200>;
             flavor = "balanced";
             quick-tap-ms = <150>;
-            bindings = <&kp L>, <&kp U+0142>;
+            bindings = <&kp L>, <&kp PL_LSTROKE>; // l / ł
         };
 
         td_n: td_n {
@@ -53,7 +53,7 @@
             tapping-term-ms = <200>;
             flavor = "balanced";
             quick-tap-ms = <150>;
-            bindings = <&kp N>, <&kp U+0144>;
+            bindings = <&kp N>, <&kp PL_NACUTE>; // n / ń
         };
 
         td_o: td_o {
@@ -63,7 +63,7 @@
             tapping-term-ms = <200>;
             flavor = "balanced";
             quick-tap-ms = <150>;
-            bindings = <&kp O>, <&kp U+00F3>;
+            bindings = <&kp O>, <&kp PL_OACUTE>; // o / ó
         };
 
         td_s: td_s {
@@ -73,7 +73,7 @@
             tapping-term-ms = <200>;
             flavor = "balanced";
             quick-tap-ms = <150>;
-            bindings = <&kp S>, <&kp U+015B>;
+            bindings = <&kp S>, <&kp PL_SACUTE>; // s / ś
         };
 
         td_z: td_z {
@@ -83,7 +83,7 @@
             tapping-term-ms = <200>;
             flavor = "balanced";
             quick-tap-ms = <150>;
-            bindings = <&kp Z>, <&kp U+017C>;
+            bindings = <&kp Z>, <&kp PL_ZACUTE>; // z / ź
         };
 
         td_x: td_x {
@@ -93,9 +93,8 @@
             tapping-term-ms = <200>;
             flavor = "balanced";
             quick-tap-ms = <150>;
-            bindings = <&kp X>, <&kp U+017A>;
+            bindings = <&kp X>, <&kp PL_ZDOT>; // x / ż
         };
-
         td_semicolon: td_semicolon {
             compatible = "zmk,behavior-tap-dance";
             label = "TD_SEMI";
