@@ -172,13 +172,15 @@
             >;
         };
 
-    layer_3 {
-        bindings = <
-            &mkp MS_UP    &mkp MS_DOWN  &mkp MS_LEFT   &mkp MS_RIGHT  &mkp BTN1     &mkp BTN2
-            &mkp WH_UP    &mkp WH_DOWN  &mkp WH_LEFT   &mkp WH_RIGHT  &trans        &trans
-            &trans        &trans        &trans        &trans         &trans        &trans
-            &mo 0         &kp SPACE     &kp ENTER     &kp BSPC       &trans        &trans
-        >;
-    };
+        layer_3 {
+            bindings = <
+                &mmv MOVE_UP     &mmv MOVE_DOWN    &mmv MOVE_LEFT    &mmv MOVE_RIGHT
+                &mkp MB1         &mkp MB2
+                &mmv SCROLL_UP   &mmv SCROLL_DOWN  &mmv SCROLL_LEFT  &mmv SCROLL_RIGHT
+                &trans           &trans
+                &trans           &trans           &trans            &trans             &trans        &trans
+                &mo 0            &kp SPACE         &kp ENTER         &kp BSPC             &trans        &trans
+            >;
+        };
     }; /* end keymap */
 }; /* end root */
