@@ -8,127 +8,99 @@
     behaviors {
         td_a: tap_dance_a {
             compatible = "zmk,behavior-tap-dance";
-            label = "TD_A";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            quick-tap-ms = <150>;
             bindings = <&kp A>, <&kp RA(A)>; // a / ą
         };
 
         td_c: tap_dance_c {
             compatible = "zmk,behavior-tap-dance";
-            label = "TD_C";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            quick-tap-ms = <150>;
             bindings = <&kp C>, <&kp RA(C)>; // c / ć
         };
 
         td_e: tap_dance_e {
             compatible = "zmk,behavior-tap-dance";
-            label = "TD_E";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            quick-tap-ms = <150>;
             bindings = <&kp E>, <&kp RA(E)>; // e / ę
         };
 
         td_l: tap_dance_l {
             compatible = "zmk,behavior-tap-dance";
-            label = "TD_L";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            quick-tap-ms = <150>;
             bindings = <&kp L>, <&kp RA(L)>; // l / ł
         };
 
         td_n: tap_dance_n {
             compatible = "zmk,behavior-tap-dance";
-            label = "TD_N";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            quick-tap-ms = <150>;
             bindings = <&kp N>, <&kp RA(N)>; // n / ń
         };
 
         td_o: tap_dance_o {
             compatible = "zmk,behavior-tap-dance";
-            label = "TD_O";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            quick-tap-ms = <150>;
             bindings = <&kp O>, <&kp RA(O)>; // o / ó
         };
 
         td_s: tap_dance_s {
             compatible = "zmk,behavior-tap-dance";
-            label = "TD_S";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            quick-tap-ms = <150>;
             bindings = <&kp S>, <&kp RA(S)>; // s / ś
         };
 
         td_z: tap_dance_z {
             compatible = "zmk,behavior-tap-dance";
-            label = "TD_Z";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            quick-tap-ms = <150>;
             bindings = <&kp Z>, <&kp RA(Z)>; // z / ź
         };
 
         td_x: tap_dance_x {
             compatible = "zmk,behavior-tap-dance";
-            label = "TD_X";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            quick-tap-ms = <150>;
             bindings = <&kp X>, <&kp RA(X)>; // x / ż
         };
 
         td_semicolon: tap_dance_semicolon {
             compatible = "zmk,behavior-tap-dance";
-            label = "TD_SEMI";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            quick-tap-ms = <150>;
             bindings = <&kp SEMI>, <&kp COLON>;
         };
 
         td_apostrophe: tap_dance_apostrophe {
             compatible = "zmk,behavior-tap-dance";
-            label = "TD_APOS";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            quick-tap-ms = <150>;
             bindings = <&kp APOS>, <&kp DQT>; // ' / "
        };
 
         td_slash_qmark: tap_dance_slash_qmark {
             compatible = "zmk,behavior-tap-dance";
-            label = "TD_SLASH_QMARK";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            quick-tap-ms = <150>;
             bindings = <&kp FSLH>, <&kp QMARK>;
         };
 
         td_comma_lt: tap_dance_comma_lt {
             compatible = "zmk,behavior-tap-dance";
-            label = "TD_COMMA_LT";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            quick-tap-ms = <150>;
             bindings = <&kp COMMA>, <&kp LT>;
         };
 
         td_dot_gt: tap_dance_dot_gt {
             compatible = "zmk,behavior-tap-dance";
-            label = "TD_DOT_GT";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            quick-tap-ms = <150>;
             bindings = <&kp DOT>, <&kp GT>;
         };
     }; /* end behaviors */
