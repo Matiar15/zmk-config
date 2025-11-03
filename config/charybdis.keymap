@@ -163,10 +163,10 @@
         layer_2 {
             bindings = <
                 &kp EXCL    &kp AT      &kp HASH   &kp DOLLAR &kp PERCENT &kp CARET
-                &kp AMPERSAND   &kp ASTERISK   &kp LPAREN   &kp RPAREN   &kp MINUS   &kp EQUAL
+                &kp AMPERSAND   &kp ASTERISK   &kp LPAR   &kp RPAR   &kp MINUS   &kp EQUAL
                 &kp TILDE   &kp GRAVE   &kp UNDERSCORE &kp PLUS &kp PIPE &kp BSLH
                 &kp LT      &kp GT      &td_comma_lt &td_dot_gt &kp SEMI &kp COLON
-                &kp QUOTE   &kp APOS    &kp LBRACE &kp RBRACE &kp LBRKT &kp RBRKT
+                &kp QUOTE   &kp APOS    &kp LBRC &kp RBRC &kp LBRKT &kp RBRKT
                 &trans      &trans      &trans      &trans    &trans &trans
                 &mo 0      &kp SPACE    &kp ENTER    &kp BSPC  &trans &trans
             >;
