@@ -4,149 +4,149 @@
 #include <dt-bindings/zmk/pointing.h>
 #include <dt-bindings/zmk/rgb.h>
 
-behaviors {
-    td_a: td_a {
-        compatible = "zmk,behavior-tap-dance";
-        label = "TD_A";
-        #binding-cells = <0>;
-        tapping-term-ms = <200>;
-        flavor = "balanced";
-        quick-tap-ms = <150>;
-        bindings = <&kp A>, <&kp U+0105>;
-    };
-
-    td_c: td_c {
-        compatible = "zmk,behavior-tap-dance";
-        label = "TD_C";
-        #binding-cells = <0>;
-        tapping-term-ms = <200>;
-        flavor = "balanced";
-        quick-tap-ms = <150>;
-        bindings = <&kp C>, <&kp U+0107>;
-    };
-
-    td_e: td_e {
-        compatible = "zmk,behavior-tap-dance";
-        label = "TD_E";
-        #binding-cells = <0>;
-        tapping-term-ms = <200>;
-        flavor = "balanced";
-        quick-tap-ms = <150>;
-        bindings = <&kp E>, <&kp U+0119>;
-    };
-
-    td_l: td_l {
-        compatible = "zmk,behavior-tap-dance";
-        label = "TD_L";
-        #binding-cells = <0>;
-        tapping-term-ms = <200>;
-        flavor = "balanced";
-        quick-tap-ms = <150>;
-        bindings = <&kp L>, <&kp U+0142>;
-    };
-
-    td_n: td_n {
-        compatible = "zmk,behavior-tap-dance";
-        label = "TD_N";
-        #binding-cells = <0>;
-        tapping-term-ms = <200>;
-        flavor = "balanced";
-        quick-tap-ms = <150>;
-        bindings = <&kp N>, <&kp U+0144>;
-    };
-
-    td_o: td_o {
-        compatible = "zmk,behavior-tap-dance";
-        label = "TD_O";
-        #binding-cells = <0>;
-        tapping-term-ms = <200>;
-        flavor = "balanced";
-        quick-tap-ms = <150>;
-        bindings = <&kp O>, <&kp U+00F3>;
-    };
-
-    td_s: td_s {
-        compatible = "zmk,behavior-tap-dance";
-        label = "TD_S";
-        #binding-cells = <0>;
-        tapping-term-ms = <200>;
-        flavor = "balanced";
-        quick-tap-ms = <150>;
-        bindings = <&kp S>, <&kp U+015B>;
-    };
-
-    td_z: td_z {
-        compatible = "zmk,behavior-tap-dance";
-        label = "TD_Z";
-        #binding-cells = <0>;
-        tapping-term-ms = <200>;
-        flavor = "balanced";
-        quick-tap-ms = <150>;
-        bindings = <&kp Z>, <&kp U+017C>;
-    };
-
-    td_x: td_x {
-        compatible = "zmk,behavior-tap-dance";
-        label = "TD_X";
-        #binding-cells = <0>;
-        tapping-term-ms = <200>;
-        flavor = "balanced";
-        quick-tap-ms = <150>;
-        bindings = <&kp X>, <&kp U+017A>;
-    };
-
-    td_semicolon: td_semicolon {
-        compatible = "zmk,behavior-tap-dance";
-        label = "TD_SEMI";
-        #binding-cells = <0>;
-        tapping-term-ms = <200>;
-        flavor = "balanced";
-        quick-tap-ms = <150>;
-        bindings = <&kp SEMI>, <&kp COLON>;
-    };
-
-    td_apostrophe: td_apostrophe {
-        compatible = "zmk,behavior-tap-dance";
-        label = "TD_APOS";
-        #binding-cells = <0>;
-        tapping-term-ms = <200>;
-        flavor = "balanced";
-        quick-tap-ms = <150>;
-        bindings = <&kp APOS>, <&kp QUOTE>;
-    };
-
-    td_slash_qmark: td_slash_qmark {
-        compatible = "zmk,behavior-tap-dance";
-        label = "TD_SLASH_QMARK";
-        #binding-cells = <0>;
-        tapping-term-ms = <200>;
-        flavor = "balanced";
-        quick-tap-ms = <150>;
-        bindings = <&kp FSLH>, <&kp QMARK>;
-    };
-
-    td_comma_lt: td_comma_lt {
-        compatible = "zmk,behavior-tap-dance";
-        label = "TD_COMMA_LT";
-        #binding-cells = <0>;
-        tapping-term-ms = <200>;
-        flavor = "balanced";
-        quick-tap-ms = <150>;
-        bindings = <&kp COMMA>, <&kp LT>;
-    };
-
-    td_dot_gt: td_dot_gt {
-        compatible = "zmk,behavior-tap-dance";
-        label = "TD_DOT_GT";
-        #binding-cells = <0>;
-        tapping-term-ms = <200>;
-        flavor = "balanced";
-        quick-tap-ms = <150>;
-        bindings = <&kp DOT>, <&kp GT>;
-    };
-};
-
 / {
+    behaviors {
+        td_a: td_a {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD_A";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            flavor = "balanced";
+            quick-tap-ms = <150>;
+            bindings = <&kp A>, <&kp U+0105>;
+        };
+
+        td_c: td_c {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD_C";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            flavor = "balanced";
+            quick-tap-ms = <150>;
+            bindings = <&kp C>, <&kp U+0107>;
+        };
+
+        td_e: td_e {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD_E";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            flavor = "balanced";
+            quick-tap-ms = <150>;
+            bindings = <&kp E>, <&kp U+0119>;
+        };
+
+        td_l: td_l {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD_L";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            flavor = "balanced";
+            quick-tap-ms = <150>;
+            bindings = <&kp L>, <&kp U+0142>;
+        };
+
+        td_n: td_n {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD_N";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            flavor = "balanced";
+            quick-tap-ms = <150>;
+            bindings = <&kp N>, <&kp U+0144>;
+        };
+
+        td_o: td_o {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD_O";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            flavor = "balanced";
+            quick-tap-ms = <150>;
+            bindings = <&kp O>, <&kp U+00F3>;
+        };
+
+        td_s: td_s {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD_S";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            flavor = "balanced";
+            quick-tap-ms = <150>;
+            bindings = <&kp S>, <&kp U+015B>;
+        };
+
+        td_z: td_z {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD_Z";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            flavor = "balanced";
+            quick-tap-ms = <150>;
+            bindings = <&kp Z>, <&kp U+017C>;
+        };
+
+        td_x: td_x {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD_X";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            flavor = "balanced";
+            quick-tap-ms = <150>;
+            bindings = <&kp X>, <&kp U+017A>;
+        };
+
+        td_semicolon: td_semicolon {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD_SEMI";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            flavor = "balanced";
+            quick-tap-ms = <150>;
+            bindings = <&kp SEMI>, <&kp COLON>;
+        };
+
+        td_apostrophe: td_apostrophe {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD_APOS";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            flavor = "balanced";
+            quick-tap-ms = <150>;
+            bindings = <&kp APOS>, <&kp QUOTE>;
+        };
+
+        td_slash_qmark: td_slash_qmark {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD_SLASH_QMARK";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            flavor = "balanced";
+            quick-tap-ms = <150>;
+            bindings = <&kp FSLH>, <&kp QMARK>;
+        };
+
+        td_comma_lt: td_comma_lt {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD_COMMA_LT";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            flavor = "balanced";
+            quick-tap-ms = <150>;
+            bindings = <&kp COMMA>, <&kp LT>;
+        };
+
+        td_dot_gt: td_dot_gt {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD_DOT_GT";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            flavor = "balanced";
+            quick-tap-ms = <150>;
+            bindings = <&kp DOT>, <&kp GT>;
+        };
+    }; /* end behaviors */
+
     macros { };
 
     keymap {
@@ -181,5 +181,5 @@ behaviors {
                 &mo 0         &kp SPACE    &kp ENTER    &kp BSPC      &trans    &trans
             >;
         };
-    };
-};
+    }; /* end keymap */
+}; /* end root */
