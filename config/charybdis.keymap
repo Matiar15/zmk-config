@@ -2,7 +2,6 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/pointing.h>
 #include <dt-bindings/zmk/rgb.h>
-#include "keys_pl.h"
 
 / {
     behaviors {
@@ -13,7 +12,7 @@
             tapping-term-ms = <200>;
             flavor = "balanced";
             quick-tap-ms = <150>;
-            bindings = <&kp A>, <&kp PL_AOGON>; // a / ą
+            bindings = <&kp A>, <&kp RA(A)>; // a / ą
         };
 
         td_c: td_c {
@@ -23,7 +22,7 @@
             tapping-term-ms = <200>;
             flavor = "balanced";
             quick-tap-ms = <150>;
-            bindings = <&kp C>, <&kp PL_CACUTE>; // c / ć
+            bindings = <&kp C>, <&kp RA(C)>; // c / ć
         };
 
         td_e: td_e {
@@ -33,7 +32,7 @@
             tapping-term-ms = <200>;
             flavor = "balanced";
             quick-tap-ms = <150>;
-            bindings = <&kp E>, <&kp PL_EOGON>; // e / ę
+            bindings = <&kp E>, <&kp RA(E)>; // e / ę
         };
 
         td_l: td_l {
@@ -43,7 +42,7 @@
             tapping-term-ms = <200>;
             flavor = "balanced";
             quick-tap-ms = <150>;
-            bindings = <&kp L>, <&kp PL_LSTROKE>; // l / ł
+            bindings = <&kp L>, <&kp RA(L)>; // l / ł
         };
 
         td_n: td_n {
@@ -53,7 +52,7 @@
             tapping-term-ms = <200>;
             flavor = "balanced";
             quick-tap-ms = <150>;
-            bindings = <&kp N>, <&kp PL_NACUTE>; // n / ń
+            bindings = <&kp N>, <&kp RA(N)>; // n / ń
         };
 
         td_o: td_o {
@@ -63,7 +62,7 @@
             tapping-term-ms = <200>;
             flavor = "balanced";
             quick-tap-ms = <150>;
-            bindings = <&kp O>, <&kp PL_OACUTE>; // o / ó
+            bindings = <&kp O>, <&kp RA(O)>; // o / ó
         };
 
         td_s: td_s {
@@ -73,7 +72,7 @@
             tapping-term-ms = <200>;
             flavor = "balanced";
             quick-tap-ms = <150>;
-            bindings = <&kp S>, <&kp PL_SACUTE>; // s / ś
+            bindings = <&kp S>, <&kp RA(S)>; // s / ś
         };
 
         td_z: td_z {
@@ -83,7 +82,7 @@
             tapping-term-ms = <200>;
             flavor = "balanced";
             quick-tap-ms = <150>;
-            bindings = <&kp Z>, <&kp PL_ZACUTE>; // z / ź
+            bindings = <&kp Z>, <&kp RA(Z)>; // z / ź
         };
 
         td_x: td_x {
@@ -93,8 +92,9 @@
             tapping-term-ms = <200>;
             flavor = "balanced";
             quick-tap-ms = <150>;
-            bindings = <&kp X>, <&kp PL_ZDOT>; // x / ż
+            bindings = <&kp X>, <&kp RA(X)>; // x / ż
         };
+
         td_semicolon: td_semicolon {
             compatible = "zmk,behavior-tap-dance";
             label = "TD_SEMI";
@@ -153,22 +153,22 @@
 
         base_layer {
             bindings = <
-                &kp TAB       &kp Q      &kp W      &kp E      &kp R      &kp T            &kp Y         &kp U      &kp I         &kp O         &kp P             &kp MINUS
-                &mt LCTRL     &kp S      &kp D      &kp F      &kp G      &kp H            &kp J         &kp K      &kp L         &td_l         &td_apostrophe    &td_semicolon
-                &mt LSHIFT    &td_z      &td_x      &kp C      &kp V      &kp B            &kp N         &kp M      &td_comma_lt  &td_dot_gt    &td_slash_qmark   &RSHIFT
-                                &kp BSPC  &kp SPACE  &mo 1      &kp ENTER  &mo 2            &kp SPACE
+                &kp TAB       &kp Q      &kp W      &kp E      &kp R      &kp T        &kp Y      &kp U      &kp I      &kp O      &kp P      &kp MINUS
+                &mt LCTRL     &kp S      &kp D      &kp F      &kp G      &kp H        &kp J      &kp K      &kp L      &td_l      &td_apostrophe &td_semicolon
+                &mt LSHIFT    &td_z      &td_x      &kp C      &kp V      &kp B        &kp N      &kp M      &td_comma_lt &td_dot_gt &td_slash_qmark &RSHIFT
+                                &kp BSPC  &kp SPACE &mo 1     &kp ENTER &mo 2        &kp SPACE
             >;
         };
 
         layer_2 {
             bindings = <
-                &kp EXCL    &kp AT     &kp HASH    &kp DOLLAR &kp PERCENT &kp CARET
-                &kp AMP     &kp ASTER  &kp LPAREN  &kp RPAREN &kp MINUS   &kp EQUAL
-                &kp TILDE   &kp GRAVE  &kp UNDERSCORE &kp PLUS &kp PIPE    &kp BSLH
-                &kp LT      &kp GT     &td_comma_lt &td_dot_gt &kp SEMI   &kp COLON
-                &kp QUOTE   &kp APOS   &kp LBRACE  &kp RBRACE &kp LBRKT  &kp RBRKT
-                &trans      &trans     &trans       &trans    &trans     &trans
-                &mo 0       &kp SPACE  &kp ENTER    &kp BSPC  &trans      &trans
+                &kp EXCL    &kp AT      &kp HASH   &kp DOLLAR &kp PERCENT &kp CARET
+                &kp AMP     &kp ASTER   &kp LPAREN &kp RPAREN &kp MINUS   &kp EQUAL
+                &kp TILDE   &kp GRAVE   &kp UNDERSCORE &kp PLUS &kp PIPE &kp BSLH
+                &kp LT      &kp GT      &td_comma_lt &td_dot_gt &kp SEMI &kp COLON
+                &kp QUOTE   &kp APOS    &kp LBRACE &kp RBRACE &kp LBRKT &kp RBRKT
+                &trans      &trans      &trans      &trans    &trans &trans
+                &mo 0      &kp SPACE    &kp ENTER    &kp BSPC  &trans &trans
             >;
         };
 
@@ -176,8 +176,8 @@
             bindings = <
                 &mkp MS_UP    &mkp MS_DOWN &mkp MS_LEFT &mkp MS_RIGHT &mkp LCLK &mkp RCLK
                 &mkp WH_UP    &mkp WH_DOWN &mkp WH_LEFT &mkp WH_RIGHT &mkp MB1  &mkp MB2
-                &trans        &trans       &trans       &trans        &trans    &trans
-                &mo 0         &kp SPACE    &kp ENTER    &kp BSPC      &trans    &trans
+                &trans       &trans       &trans       &trans       &trans   &trans
+                &mo 0        &kp SPACE    &kp ENTER    &kp BSPC      &trans &trans
             >;
         };
     }; /* end keymap */
