@@ -112,8 +112,8 @@
             tapping-term-ms = <200>;
             flavor = "balanced";
             quick-tap-ms = <150>;
-            bindings = <&kp APOS>, <&kp QUOTE>;
-        };
+            bindings = <&kp APOS>, <&uc 0x22>; // ' / "
+       };
 
         td_slash_qmark: td_slash_qmark {
             compatible = "zmk,behavior-tap-dance";
