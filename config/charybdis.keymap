@@ -87,7 +87,7 @@
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&kp FSLH>, <&kp QMARK>;
+            bindings = <&kp FSLH>, <&kp LS(FSLH)>;
         };
 
         td_comma_lt: tap_dance_comma_lt {
