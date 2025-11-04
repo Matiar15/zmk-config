@@ -111,7 +111,7 @@
             bindings = <
     &kp TAB    &kp Q    &kp W    &td_e    &kp R    &kp T        &kp Y      &kp U    &kp I       &td_o    &kp P          &kp MINUS
     &kp LCTRL  &td_a    &td_s    &kp D    &kp F    &kp G        &kp H      &kp J    &kp K       &td_l    &td_apostrophe &td_semicolon
-    &kp LSHIFT &td_z    &td_x    &td_c    &kp V    &kp B        &td_n      &kp M    &td_comma_lt &td_dot_gt &slash_qmark &kp RSHIFT
+    &kp LSHIFT &td_z    &td_x    &td_c    &kp V    &kp B        &td_n      &kp M    &td_comma_lt &td_dot_gt &td_slash &kp RSHIFT
                                  &kp BSPC &kp SPACE &mo 1        &kp ENTER  &mo 2    &kp SPACE
             >;
         };
