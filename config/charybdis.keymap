@@ -112,45 +112,38 @@
 
         base_layer {
             bindings = <
-// ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-    &kp TAB        &kp Q        &kp W        &kp E        &kp R        &kp T        &kp Y        &kp U        &kp I        &kp O        &kp P        &kp MINUS
-// ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-    &mt LCTRL      &kp S        &kp D        &kp F        &kp G        &kp H        &kp J        &kp K        &kp L        &td_l        &td_apostrophe &td_semicolon
-// ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-    &mt LSHIFT     &td_z        &td_x        &kp C        &kp V        &kp B        &kp N        &kp M        &td_comma_lt &td_dot_gt  &td_slash_qmark &mt RSHIFT
-// ╰─────────────┴─────────────┴─────────────┴─────────────┴─────────────┤   ├─────────────┴─────────────┴─────────────┴─────────────┴─────────────╯
-                                  &kp BSPC     &kp SPACE    &mo 1       &kp ENTER    &mo 2        &kp SPACE
-//                                ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
+    &kp TAB    &kp Q    &kp W    &td_e    &kp R    &kp T        &kp Y      &kp U    &kp I       &td_o    &kp P          &kp MINUS
+    &kp LCTRL  &td_a    &td_s    &kp D    &kp F    &kp G        &kp H      &kp J    &kp K       &td_l    &td_apostrophe &td_semicolon
+    &kp LSHIFT &td_z    &td_x    &td_c    &kp V    &kp B        &td_n      &kp M    &td_comma_lt &td_dot_gt &td_slash_qmark &kp RSHIFT
+                                 &kp BSPC &kp SPACE &mo 1        &kp ENTER  &mo 2    &kp SPACE
+            >;
+        };
 
+        layer_1 {
+            bindings = <
+    &kp ESC   &kp N1  &kp N2  &kp N3    &kp N4    &kp N5       &kp N6    &kp N7   &kp N8    &kp N9     &kp N0   &kp DEL
+    &trans    &kp F1  &kp F2  &kp F3    &kp F4    &kp F5       &kp LEFT  &kp DOWN &kp UP    &kp RIGHT  &trans   &trans
+    &trans    &kp F6  &kp F7  &kp F8    &kp F9    &kp F10      &kp F11   &kp F12  &trans    &trans     &trans   &trans
+                              &trans    &trans    &trans       &trans    &trans   &trans
             >;
         };
 
         layer_2 {
             bindings = <
-// ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-    &kp EXCL       &kp AT       &kp HASH      &kp DOLLAR    &kp PERCENT   &kp CARET     &kp AMPS      &kp ASTRK     &kp LPAR      &kp RPAR      &kp MINUS     &kp EQUAL
-// ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-    &kp TILDE      &kp GRAVE    &kp UNDER     &kp PLUS      &kp PIPE      &kp BSLH      &kp LT        &kp GT        &td_comma_lt  &td_dot_gt    &kp SEMI      &kp COLON
-// ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-    &kp DQT        &kp APOSTROPHE &kp LBRC    &kp RBRC      &kp LBKT      &kp RBKT      &trans        &trans        &trans        &trans        &trans        &trans
-// ╰─────────────┴─────────────┴─────────────┴─────────────┴─────────────┤   ├─────────────┴─────────────┴─────────────┴─────────────┴─────────────╯
-                                  &mo 0        &kp SPACE     &kp ENTER     &kp BSPC      &trans        &trans
-//                                ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
+    &kp EXCL  &kp AT         &kp HASH  &kp DOLLAR &kp PERCENT &kp CARET    &kp AMPS  &kp ASTRK &kp LPAR     &kp RPAR   &kp MINUS &kp EQUAL
+    &kp TILDE &kp GRAVE      &kp UNDER &kp PLUS   &kp PIPE    &kp BSLH     &kp LT    &kp GT    &td_comma_lt &td_dot_gt &kp SEMI  &kp COLON
+    &kp DQT   &kp APOSTROPHE &kp LBRC  &kp RBRC   &kp LBKT    &kp RBKT     &trans    &trans    &trans       &trans     &trans    &trans
+                                       &trans     &kp SPACE   &kp ENTER    &kp BSPC  &trans    &trans
             >;
         };
 
         layer_3 {
             bindings = <
-// ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-     &mmv MOVE_UP     &mmv MOVE_DOWN     &mmv MOVE_LEFT     &mmv MOVE_RIGHT     &mkp MB1     &mkp MB2       &msc SCRL_UP     &msc SCRL_DOWN    &msc SCRL_LEFT    &msc SCRL_RIGHT &trans &trans
-// ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-     &trans         &trans             &trans             &trans             &trans       &trans         &trans           &trans            &mo 0            &kp SPACE  &trans &trans
-// ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-     &kp ENTER      &kp BSPC           &trans             &trans             &trans       &trans         &trans           &trans            &trans           &trans  &trans &trans
-// ╰─────────────┴─────────────┴─────────────┴─────────────┼─────────────┼─────────────╯   ╰─────────────┴─────────────┴─────────────┴─────────────┴─────────────┤
-                                                       &trans        &trans       &trans        &trans       &trans        &trans
-//                                                   ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
+    &mmv MOVE_UP &mmv MOVE_DOWN &mmv MOVE_LEFT &mmv MOVE_RIGHT &mkp MB1 &mkp MB2    &msc SCRL_UP &msc SCRL_DOWN &msc SCRL_LEFT &msc SCRL_RIGHT &trans    &trans
+    &trans       &trans         &trans         &trans          &trans   &trans      &trans       &trans         &trans         &kp SPACE       &trans    &trans
+    &kp ENTER    &kp BSPC       &trans         &trans          &trans   &trans      &trans       &trans         &trans         &trans          &trans    &trans
+                                               &trans          &trans   &trans      &trans       &trans         &trans
             >;
         };
-    }; /* end keymap */
-}; /* end root */
+    };
+};
