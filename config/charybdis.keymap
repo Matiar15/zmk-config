@@ -6,6 +6,7 @@
 
 / {
     behaviors {
+
         td_slash: tap_dance_slash {
             compatible = "zmk,behavior-tap-dance";
             tapping-term-ms = <200>;
@@ -103,44 +104,71 @@
             tapping-term-ms = <200>;
             bindings = <&kp DOT>, <&kp GT>;
         };
+
+
+        // Underscore easily accessible for programming
+        td_minus_under: tap_dance_minus_underscore {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&kp MINUS>, <&kp UNDER>;
+        };
     }; /* end behaviors */
 
     keymap {
         compatible = "zmk,keymap";
 
-        base_layer {
+        macos_base {
             bindings = <
-    &kp TAB    &kp Q    &kp W    &td_e    &kp R    &kp T        &kp Y      &kp U    &kp I       &td_o    &kp P          &kp MINUS
-    &kp LCTRL  &td_a    &td_s    &kp D    &kp F    &kp G        &kp H      &kp J    &kp K       &td_l    &td_apostrophe &td_semicolon
+    &kp TAB    &kp Q    &kp W    &td_e    &kp R    &kp T        &kp Y      &kp U    &kp I       &td_o    &kp P          &td_minus_under
+    &kp ESC    &td_a    &td_s    &kp D    &kp F    &kp G        &kp H      &kp J    &kp K       &td_l    &td_apostrophe &td_semicolon
     &kp LSHIFT &td_z    &td_x    &td_c    &kp V    &kp B        &td_n      &kp M    &td_comma_lt &td_dot_gt &td_slash &kp RSHIFT
-                                 &kp BSPC &kp SPACE &mo 1        &kp ENTER  &mo 2    &kp SPACE
+                              &kp BSPC &kp LGUI &mo 1        &kp ENTER  &mo 2    &kp SPACE
             >;
         };
 
         layer_1 {
             bindings = <
-    &kp ESC   &kp N1  &kp N2  &kp N3    &kp N4    &kp N5       &kp N6    &kp N7   &kp N8    &kp N9     &kp N0   &kp DEL
-    &trans    &kp F1  &kp F2  &kp F3    &kp F4    &kp F5       &kp LEFT  &kp DOWN &kp UP    &kp RIGHT  &trans   &trans
-    &trans    &kp F6  &kp F7  &kp F8    &kp F9    &kp F10      &kp F11   &kp F12  &trans    &trans     &trans   &trans
-                              &trans    &trans    &trans       &trans    &trans   &trans
+    &kp ESC    &kp N1  &kp N2  &kp N3    &kp N4    &kp N5       &kp N6    &kp N7   &kp N8    &kp N9     &kp N0      &kp LBKT
+    &trans     &kp F1  &kp F2  &kp F3    &kp F4    &kp F5       &kp LEFT  &kp DOWN &kp UP    &kp RIGHT  &kp LBRC    &kp RBKT
+    &trans     &kp F6  &kp F7  &kp F8    &kp F9    &kp F10      &kp F11   &kp F12  &mo 4     &trans     &kp RBRC    &trans
+                              &trans    &kp LALT  &trans       &trans    &mo 2    &trans
             >;
         };
 
         layer_2 {
             bindings = <
-    &kp EXCL  &kp AT         &kp HASH  &kp DOLLAR &kp PERCENT &kp CARET    &kp AMPS  &kp ASTRK &kp LPAR     &kp RPAR   &kp MINUS &kp EQUAL
-    &kp TILDE &kp GRAVE      &kp UNDER &kp PLUS   &kp PIPE    &kp BSLH     &kp LT    &kp GT    &td_comma_lt &td_dot_gt &kp SEMI  &kp COLON
-    &kp DQT   &kp APOSTROPHE &kp LBRC  &kp RBRC   &kp LBKT    &kp RBKT     &trans    &trans    &trans       &trans     &trans    &trans
-                                       &trans     &kp SPACE   &kp ENTER    &kp BSPC  &trans    &trans
+    &kp EXCL   &kp AT         &kp HASH  &kp DOLLAR &kp PERCENT &kp CARET    &kp AMPS  &kp ASTRK &kp LPAR     &kp RPAR   &kp MINUS &kp EQUAL
+    &kp TILDE  &kp GRAVE      &kp UNDER &kp PLUS   &kp PIPE    &kp BSLH     &kp LT    &kp GT    &td_comma_lt &td_dot_gt &kp SEMI  &kp COLON
+    &kp DQT    &kp APOSTROPHE &kp LBRC  &kp RBRC   &kp LBKT    &kp RBKT     &trans    &trans    &trans       &trans     &trans    &trans
+                              &trans     &kp SPACE   &mo 1        &kp BSPC  &trans    &trans
             >;
         };
 
         layer_3 {
             bindings = <
+    &trans       &trans         &trans         &trans          &trans   &trans      &trans       &trans         &trans         &trans          &trans    &trans
     &mmv MOVE_UP &mmv MOVE_DOWN &mmv MOVE_LEFT &mmv MOVE_RIGHT &mkp MB1 &mkp MB2    &msc SCRL_UP &msc SCRL_DOWN &msc SCRL_LEFT &msc SCRL_RIGHT &trans    &trans
-    &trans       &trans         &trans         &trans          &trans   &trans      &trans       &trans         &trans         &kp SPACE       &trans    &trans
-    &kp ENTER    &kp BSPC       &trans         &trans          &trans   &trans      &trans       &trans         &trans         &trans          &trans    &trans
-                                               &trans          &trans   &trans      &trans       &trans         &trans
+    &trans       &trans         &trans         &trans          &trans   &trans      &trans       &trans         &trans         &trans          &trans    &trans
+                              &trans          &trans   &trans      &trans       &trans         &trans
+            >;
+        };
+
+        bt_layer {
+            bindings = <
+    &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4 &bt BT_CLR    &trans &trans &trans &trans &tog 5 &trans
+    &trans       &trans       &trans       &trans       &trans       &trans        &trans &trans &trans &trans &trans &trans
+    &trans       &trans       &trans       &trans       &trans       &trans        &trans &trans &trans &trans &trans &trans
+                              &trans       &trans       &trans        &trans &trans &trans
+            >;
+        };
+
+        linux_base {
+            bindings = <
+    &kp TAB    &kp Q    &kp W    &td_e    &kp R    &kp T        &kp Y      &kp U  &kp I       &td_o    &kp P           &td_minus_under
+    &kp ESC    &td_a    &td_s    &kp D    &kp F    &kp G        &kp H      &kp J  &kp K       &td_l    &td_apostrophe  &td_semicolon
+    &kp LSHIFT &td_z    &td_x    &td_c    &kp V    &kp B        &td_n      &kp M  &td_comma_lt &td_dot_gt &td_slash    &kp RSHIFT
+                              &kp BSPC     &kp LCTRL &mo 1        &kp ENTER       &mo 2  &kp SPACE
             >;
         };
     };
