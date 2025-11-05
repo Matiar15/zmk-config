@@ -105,69 +105,6 @@
             bindings = <&kp DOT>, <&kp GT>;
         };
 
-        // Linux variants (RALT instead of RA)
-        td_a_linux: tap_dance_a_linux {
-            compatible = "zmk,behavior-tap-dance";
-            #binding-cells = <0>;
-            tapping-term-ms = <200>;
-            bindings = <&kp A>, <&kp RALT(A)>; // a / ą (Linux)
-        };
-
-        td_c_linux: tap_dance_c_linux {
-            compatible = "zmk,behavior-tap-dance";
-            #binding-cells = <0>;
-            tapping-term-ms = <200>;
-            bindings = <&kp C>, <&kp RALT(C)>; // c / ć (Linux)
-        };
-
-        td_e_linux: tap_dance_e_linux {
-            compatible = "zmk,behavior-tap-dance";
-            #binding-cells = <0>;
-            tapping-term-ms = <200>;
-            bindings = <&kp E>, <&kp RALT(E)>; // e / ę (Linux)
-        };
-
-        td_l_linux: tap_dance_l_linux {
-            compatible = "zmk,behavior-tap-dance";
-            #binding-cells = <0>;
-            tapping-term-ms = <200>;
-            bindings = <&kp L>, <&kp RALT(L)>; // l / ł (Linux)
-        };
-
-        td_n_linux: tap_dance_n_linux {
-            compatible = "zmk,behavior-tap-dance";
-            #binding-cells = <0>;
-            tapping-term-ms = <200>;
-            bindings = <&kp N>, <&kp RALT(N)>; // n / ń (Linux)
-        };
-
-        td_o_linux: tap_dance_o_linux {
-            compatible = "zmk,behavior-tap-dance";
-            #binding-cells = <0>;
-            tapping-term-ms = <200>;
-            bindings = <&kp O>, <&kp RALT(O)>; // o / ó (Linux)
-        };
-
-        td_s_linux: tap_dance_s_linux {
-            compatible = "zmk,behavior-tap-dance";
-            #binding-cells = <0>;
-            tapping-term-ms = <200>;
-            bindings = <&kp S>, <&kp RALT(S)>; // s / ś (Linux)
-        };
-
-        td_z_linux: tap_dance_z_linux {
-            compatible = "zmk,behavior-tap-dance";
-            #binding-cells = <0>;
-            tapping-term-ms = <200>;
-            bindings = <&kp Z>, <&kp RALT(Z)>; // z / ź (Linux)
-        };
-
-        td_x_linux: tap_dance_x_linux {
-            compatible = "zmk,behavior-tap-dance";
-            #binding-cells = <0>;
-            tapping-term-ms = <200>;
-            bindings = <&kp X>, <&kp RALT(X)>; // x / ż (Linux)
-        };
 
         // Underscore easily accessible for programming
         td_minus_under: tap_dance_minus_underscore {
@@ -228,9 +165,9 @@
 
         linux_base {
             bindings = <
-    &kp TAB    &kp Q         &kp W         &td_e_linux  &kp R    &kp T        &kp Y           &kp U  &kp I         &td_o_linux  &kp P           &td_minus_under
-    &kp ESC    &td_a_linux   &td_s_linux   &kp D        &kp F    &kp G        &kp H           &kp J  &kp K         &td_l_linux  &td_apostrophe  &td_semicolon
-    &kp LSHIFT &td_z_linux   &td_x_linux   &td_c_linux  &kp V    &kp B        &td_n_linux     &kp M  &td_comma_lt  &td_dot_gt   &td_slash       &kp RSHIFT
+    &kp TAB    &kp Q    &kp W    &td_e    &kp R    &kp T        &kp Y      &kp U  &kp I       &td_o    &kp P           &td_minus_under
+    &kp ESC    &td_a    &td_s    &kp D    &kp F    &kp G        &kp H      &kp J  &kp K       &td_l    &td_apostrophe  &td_semicolon
+    &kp LSHIFT &td_z    &td_x    &td_c    &kp V    &kp B        &td_n      &kp M  &td_comma_lt &td_dot_gt &td_slash    &kp RSHIFT
                               &kp BSPC     &kp LCTRL &mo 1        &kp ENTER       &mo 2  &kp SPACE
             >;
         };
